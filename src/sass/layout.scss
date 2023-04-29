@@ -1,0 +1,71 @@
+.time-management-app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .log {
+    min-width: 330px;
+    width: min-content;
+    height: calc(100vh - 73px);
+    overflow: auto;
+    .log-record {
+      display: grid;
+      .description {
+      }
+      .time-spent {
+      }
+    }
+    .task-form {
+      .button{}
+    }
+  }
+  .buttons-container {
+    padding: 5px;
+    width: 450px;
+    height: 53px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    .button {
+      padding: 5px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  .modal-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    .task-form{
+      margin: auto;
+      padding: 10px;
+      width: 250px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .working{
+      margin: auto;
+      padding: 10px;
+      width: 300px;
+      height: min-content;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .description{
+      }
+      .button{
+        padding: 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .results {
+  }
+}

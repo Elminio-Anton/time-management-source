@@ -1,0 +1,117 @@
+.time-management-app {
+  background-color: #243119ff; }
+  .time-management-app .log {
+    background-color: #629460ff;
+    background: linear-gradient(to right, #243119ff 0% 10%, transparent 50% 100%), linear-gradient(to left, #243119ff 0% 10%, transparent 50% 100%), linear-gradient(to bottom, #243119ff 0%, transparent 10% 100%), #629460ff;
+    padding: 30px;
+    border-radius: 10px; }
+    .time-management-app .log .log-record {
+      border-radius: 20px;
+      margin: 10px 0px;
+      background-color: red;
+      cursor: pointer; }
+      .time-management-app .log .log-record.checked {
+        box-shadow: #629460ff 0px 0px 10px 10px; }
+      .time-management-app .log .log-record .description {
+        padding: 2px 5px;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #243119ff;
+        color: #c9f2c7ff; }
+        .time-management-app .log .log-record .description.closed {
+          text-decoration: line-through; }
+      .time-management-app .log .log-record .time-spent {
+        background-color: #243119ff;
+        color: #aceca1ff;
+        padding: 2px 5px;
+        border-radius: 0px 0px 10px 10px; }
+    .time-management-app .log .task-form {
+      background-color: yellowgreen; }
+  .time-management-app .buttons-container {
+    background-color: royalblue;
+    background: linear-gradient(to right, #243119ff 0% 20%, transparent 50% 100%), linear-gradient(to left, #243119ff 0% 20%, transparent 50% 100%), linear-gradient(to top, #243119ff 0%, transparent 30% 100%), #629460ff; }
+    .time-management-app .buttons-container .button {
+      background-color: #629460ff;
+      font-family: Arial, sans-serif;
+      font-weight: 600;
+      border: none; }
+  .time-management-app .modal-container {
+    background-color: #243119ff;
+    opacity: 0.9; }
+    .time-management-app .modal-container .task-form {
+      background-color: #aceca1ff;
+      border-radius: 10px; }
+      .time-management-app .modal-container .task-form .confirm {
+        background-color: #629460ff;
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        border: none;
+        padding: 3px; }
+    .time-management-app .modal-container .working {
+      background-color: #aceca1ff;
+      border-radius: 10px; }
+      .time-management-app .modal-container .working .description {
+        font-family: Arial, sans-serif; }
+      .time-management-app .modal-container .working .button {
+        background-color: #629460ff;
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        border: none; }
+  .time-management-app .results {
+    background-color: lightcoral; }
+
+.time-management-app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .time-management-app .log {
+    min-width: 330px;
+    width: min-content;
+    height: calc(100vh - 73px);
+    overflow: auto; }
+    .time-management-app .log .log-record {
+      display: grid; }
+  .time-management-app .buttons-container {
+    padding: 5px;
+    width: 450px;
+    height: 53px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .time-management-app .buttons-container .button {
+      padding: 5px 10px;
+      border-radius: 10px;
+      cursor: pointer; }
+  .time-management-app .modal-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+    .time-management-app .modal-container .task-form {
+      margin: auto;
+      padding: 10px;
+      width: 250px;
+      display: flex;
+      justify-content: space-around; }
+    .time-management-app .modal-container .working {
+      margin: auto;
+      padding: 10px;
+      width: 300px;
+      height: min-content;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .time-management-app .modal-container .working .button {
+        padding: 5px 10px;
+        border-radius: 10px;
+        cursor: pointer; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
